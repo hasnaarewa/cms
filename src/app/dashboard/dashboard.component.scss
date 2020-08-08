@@ -1,0 +1,100 @@
+$common-bg: #212733;
+$common-fg: #d9d7ce;
+$danger: #ff3333;
+$is-active: #607080;
+$is-hover: #272d38;
+$aside-size: 270px;
+$orange: red;
+app-dashboard{
+
+.wrapper, html, body {
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    align-items: stretch;
+    .nav-right{
+      // a{
+      //   color:#fff;
+      // }
+      // .user{
+      //   .button{
+      //     color:#000;
+      //     &:hover{
+      //       color:#000;
+      //       // background-color
+      //     }
+      //   }
+      // }
+      .button{
+        border:none;
+      }
+    }
+    .hero-head{
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+    }
+  }
+  
+  // Sidebar
+  .sidebar {
+    // padding: 20px 20px;
+    // padding: 10px;
+    width: $aside-size;
+    flex: 0 0 $aside-size;
+    background-color: $common-bg;
+  
+    aside {
+      margin: 10px;
+    }
+    .menu-label {
+      color: $orange;
+    }
+    .menu-list a {
+      color: $common-fg;
+    }
+    .menu-list a:hover {
+      color: $common-fg;
+      background-color: $is-hover;
+    }
+    .menu-list a.is-active {
+      // color: $is-active;
+      background-color: $is-active;
+    }
+    .is-brand {
+      display: block;
+      text-align: center;
+      line-height: 50px;
+      font-weight: 800;
+      font-size: 1.5em;
+    }
+  }
+  .main {
+    flex-grow: 1;
+    margin-left: $aside-size;
+    // width: 100vh;
+    // width: auto;
+    .columns {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  .is-fullheight {
+    height: 100vh;
+    position: fixed;
+    // height: 100%;
+    // top: 0;
+    // bottom: 0;
+    // background-color: gray;
+  }
+  
+  /* Everything but the jumbotron gets side spacing for mobile first views */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

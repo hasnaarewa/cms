@@ -1,0 +1,21 @@
+app-category{
+    .wrapper{
+        margin-top: 20px;
+        .table{
+            width: 100%;
+            tr{
+                td{
+                    img{
+                        width: 80px;
+                    }
+                    &.actions{
+                        a.button.is-danger{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+              
+            }
+        }
+    }
+}
